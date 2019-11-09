@@ -1,0 +1,81 @@
+{
+  "tables": [
+    {
+      "id": 1,
+      "name": "Customers",
+      "noOfRows": 100000,
+      "columns": [
+        {
+          "id": "1",
+          "name": "customer_id",
+          "attributes": [
+            {
+              "data-type": "String",
+              "regX": "",
+              "isPrimaryKey": true
+            }
+          ]
+        }
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Transaction",
+      "noOfRows": 0,
+      "columns": [
+        {
+          "id": "1",
+          "name": "transaction_id",
+          "attributes": [
+            {
+              "data-type": "String",
+              "regX": "",
+              "isPrimaryKey": true
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "name": "customer_id",
+          "attributes": [
+            {
+              "data-type": "String",
+              "regX": "",
+              "isPrimaryKey": true
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "name": "transaction_date",
+          "attributes": [
+            {
+              "data_type": "TimeStamp",
+              "regX": "",
+              "start_date": "2011-08-12T20:17:46.384",
+              "end_date": "2011-08-12T20:17:46.384",
+              "format": "yyyy-MM-dd'T'HH:mm:ss.SSS",
+              "isPrimaryKey": false
+            }
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "table_id": 1,
+          "mapping": [
+            {
+              "current_column_id": 2,
+              "related_column_id": 1
+            }
+          ],
+          "cardinality_min": 1,
+          "cardinality_max": 5000000
+        }
+      ]
+    }
+  ]
+}
