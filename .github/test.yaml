@@ -1,0 +1,15 @@
+name: TDSS Tag Creation
+
+on:
+  push:
+    branches:
+     - refs/tags/*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v2
+      - name: Say hellow
+        run: echo hellow
