@@ -3,7 +3,8 @@ name: TDSS Tag Creation
 on:
   push:
     branches:
-     - refs/tags/*
+     - refs/tags/@orgname/*
+
 
 jobs:
   build:
