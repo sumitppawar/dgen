@@ -1,4 +1,4 @@
-### Relational big-data generator
+### Big-data generator
 
 ### Purpose 
 1. Generate billions of records.
@@ -7,3 +7,5 @@
 ### Goal 
 1. Provide schema in json format.
 2. Using schema generate data
+3. Different file format
+4. Different data storage
